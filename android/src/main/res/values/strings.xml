@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">TopTap</string>
+    <string name="facebook_app_id">1561587461375636</string>
+    <string name="fb_login_protocol_scheme">fb1561587461375636</string>
+    <string name="facebook_client_token">712a65e0523757602bea7e0de1479f1b</string>
+</resources>

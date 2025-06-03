@@ -1,0 +1,66 @@
+name: flutter_camera_effects
+description: "A cross-platform camera SDK with real-time filters and AR effects for Flutter."
+version: 0.0.1
+homepage: https://github.com/example/flutter_camera_effects
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=3.22.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.5+9
+  path_provider: ^2.1.4
+  image: ^4.1.6
+  permission_handler: ^11.3.0
+  google_mlkit_face_detection: ^0.9.0
+  vector_math: ^2.1.4
+  plugin_platform_interface: ^2.1.8
+  path: ^1.9.0
+  shader: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # To add assets to your package, add an assets section, like this:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_camera_effects
+        pluginClass: FlutterCameraEffectsPlugin
+
+  assets:
+    - assets/filters/
+    - assets/ar/
+
+platforms:
+  android:
+  ios:
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package
